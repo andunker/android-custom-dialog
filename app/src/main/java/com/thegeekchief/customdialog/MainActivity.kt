@@ -40,8 +40,17 @@ class MainActivity : AppCompatActivity() {
 
         customProgressBtn?.setOnClickListener{
 
+            customProgressDialogFunction()
+
         }
 
+    }
+
+    private fun customProgressDialogFunction() {
+        val customProgressDialog = Dialog(this)
+        customProgressDialog.setContentView(R.layout.dialog_custom_progress)
+
+        customProgressDialog.show()
     }
 
     private fun customDialogFunction() {
